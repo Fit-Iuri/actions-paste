@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Removing from PR
-      - run: |
+        run: |
           git checkout main -- public
