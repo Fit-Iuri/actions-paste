@@ -1,0 +1,13 @@
+name: Remove Files on PR
+
+on:
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          git checkout main -- public
