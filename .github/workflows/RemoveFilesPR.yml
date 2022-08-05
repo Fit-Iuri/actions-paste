@@ -13,4 +13,4 @@ jobs:
       # - name: Checkout
       - uses: actions/checkout@v2
       - run: |
-          git checkout main -- public
+          git checkout ${GITHUB_BASE_REF} -- public
