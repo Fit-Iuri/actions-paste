@@ -2,8 +2,6 @@ name: Remove Files on PR
 
 on:
   pull_request:
-    branches:
-      - "v99"
 
 jobs:
   pull_request:
