@@ -19,4 +19,4 @@ jobs:
       - run: |
           git fetch
       - run: |
-          git checkout ${GITHUB_BASE_REF} -- public
+          git checkout origin/main -- public
