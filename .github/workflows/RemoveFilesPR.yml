@@ -13,7 +13,8 @@ jobs:
       # - name: Checkout
       # - uses: actions/checkout@v2
       # git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] [--]
-      # git checkout ${GITHUB_BASE_REF} -- public
       - uses: actions/checkout@v1
       - run: |
           git fetch
+      - run: |
+          git checkout ${GITHUB_BASE_REF} -- public
