@@ -20,4 +20,6 @@ jobs:
           git fetch
       - run: |
           git checkout origin/main -- public
+          git config --global user.email "iuri.mendes@fitbank.com.br"
+          git config --global user.name "Fit-Iuri"
           git commit -m "generated"
