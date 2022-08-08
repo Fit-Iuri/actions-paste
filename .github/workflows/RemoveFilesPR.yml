@@ -12,10 +12,10 @@ jobs:
     steps:
       # - name: Checkout
       # - uses: actions/checkout@v2
-      # git checkout ${GITHUB_BASE_REF} -- public
+      # git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] [--]
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - run: |
           git fetch
-          git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] [--] public
+          git checkout ${GITHUB_BASE_REF} -- public
