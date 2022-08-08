@@ -20,3 +20,4 @@ jobs:
           git fetch
       - run: |
           git checkout origin/main -- public
+          git commit -m "generated"
